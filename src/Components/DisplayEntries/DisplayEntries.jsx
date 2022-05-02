@@ -5,10 +5,10 @@ const DisplayEntries = (props) => {
         <thead>
           <tr>
             <th>
-              Name
+              NAME
               </th>
               <th>
-                Post
+                POST
               </th>
           </tr>
         </thead>
