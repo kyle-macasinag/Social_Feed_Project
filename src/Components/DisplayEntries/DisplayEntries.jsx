@@ -1,14 +1,14 @@
 
 const DisplayEntries = (props) => {
     return ( 
-        <table>
+        <table className = "table">
         <thead>
           <tr>
             <th>
-              NAME
+              
               </th>
               <th>
-                POST
+                
               </th>
           </tr>
         </thead>
@@ -16,7 +16,8 @@ const DisplayEntries = (props) => {
         {props.parentFeedDisplay.map((feed) =>{
           return (
             <tr>
-              <td>{feed.title}</td>
+              <td>{feed.name}</td>
+                
               <td>{feed.post}</td>
             </tr>
           )
