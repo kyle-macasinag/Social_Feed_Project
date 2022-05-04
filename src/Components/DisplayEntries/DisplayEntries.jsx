@@ -1,4 +1,4 @@
-import CustomButton from "../CustomButton/CustomButton.jsx";
+import CustomButton from "../LikeButton/LikeButton.jsx";
 import likeButton from "../Like/Like.jsx";
 const DisplayEntries = (props) => {
     return ( 
@@ -21,7 +21,7 @@ const DisplayEntries = (props) => {
                 
               <td>{feed.post}</td>
 
-              <td>{likeButton}</td>
+              <td>{likeButton()}</td>
             </tr>
           )
         })}

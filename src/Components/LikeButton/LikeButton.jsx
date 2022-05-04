@@ -1,5 +1,5 @@
 import {useState} from "react"
-import "../CustomButton/CustomButton.css"
+import "./LikeButton.css"
 
 const CustomButton = (props) => {
 
@@ -15,7 +15,7 @@ const CustomButton = (props) => {
     }
         return (
             <div>
-                <button className = {buttonClass} onClick = {handleClick}>props.message</button>
+                <button className = {buttonClass} onClick = {handleClick}>Like</button>
             </div>  
     )
 }

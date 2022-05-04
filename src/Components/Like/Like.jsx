@@ -1,4 +1,4 @@
-import CustomButton from "../CustomButton/CustomButton";
+import CustomButton from "../LikeButton/LikeButton";
 function likeButton(){
 
     return(
