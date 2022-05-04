@@ -1,15 +1,15 @@
 import CustomButton from "../LikeButton/LikeButton.jsx";
-import likeButton from "../Like/Like.jsx";
+import likeButton from "../LikeButton/Like.jsx";
+import dislikeButton from "../Dislike/Dislike.jsx";
 const DisplayEntries = (props) => {
     return ( 
-
+        
         <table className = "table">
         <thead>
           <tr>
             <th>   
               </th>
               <th>
-                
               </th>
           </tr>
         </thead>
@@ -22,6 +22,8 @@ const DisplayEntries = (props) => {
               <td>{feed.post}</td>
 
               <td>{likeButton()}</td>
+
+              <td>{dislikeButton()}</td>
             </tr>
           )
         })}
