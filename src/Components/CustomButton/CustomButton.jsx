@@ -1,15 +1,22 @@
 import {useState} from "react"
-//import "./CustomButton.css"
+import "../CustomButton/CustomButton.css"
 
 const CustomButton = (props) => {
 
+    const [buttonClass, setButtonClass] = useState("inactive");
+
     function handleClick(){
-        //Need: Toggle between active & inactive css class
+        if(buttonClass === "inactive"){
+            setButtonClass("active");
+        }
+        else if(buttonClass === "active"){
+            setButtonClass("inactive");
+        }
     }
         return (
             <div>
-                <button className = "inactive" onClick = {handleClick}>props.message</button>
+                <button className = {buttonClass} onClick = {handleClick}>props.message</button>
             </div>  
     )
 }
-export default CustomButton
+export default CustomButton;

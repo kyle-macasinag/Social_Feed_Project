@@ -1,4 +1,5 @@
-
+import CustomButton from "../CustomButton/CustomButton.jsx";
+import likeButton from "../Like/Like.jsx";
 const DisplayEntries = (props) => {
     return ( 
 
@@ -19,6 +20,8 @@ const DisplayEntries = (props) => {
               <td>{feed.name}</td>
                 
               <td>{feed.post}</td>
+
+              <td>{likeButton}</td>
             </tr>
           )
         })}
