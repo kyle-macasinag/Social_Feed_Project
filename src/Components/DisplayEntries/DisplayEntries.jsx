@@ -1,11 +1,11 @@
 
 const DisplayEntries = (props) => {
     return ( 
+
         <table className = "table">
         <thead>
           <tr>
-            <th>
-              
+            <th>   
               </th>
               <th>
                 
